@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "preserveConstEnums": true,
+    "strictNullChecks": true,
+    "outDir": "./lib",
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "emitDeclarationOnly": true,
+    "esModuleInterop": true
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules", "lib"]
+}
