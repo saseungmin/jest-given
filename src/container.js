@@ -1,5 +1,5 @@
 /* eslint-disable no-use-before-define */
-import GivenError from './GivenError';
+import GivenError from './GivenError.ts';
 
 const RESERVED = ['name', 'length', 'caller', 'arguments'];
 const REG_RESERVED = /^__(.+?)__$/;
@@ -117,7 +117,7 @@ function Container(run) {
     if (immediate) getter();
   }
 
-  function given(property, fn) {
+  const given = (property, fn) => {
     const options = parseProp(property);
     ensureProperty(options.name);
 
@@ -134,7 +134,7 @@ function Container(run) {
     } else {
       run(() => define(options, fn));
     }
-  }
+  };
 
   removeBaseProps(given);
 
