@@ -4,5 +4,4 @@ module.exports = {
       '@swc/jest',
     ],
   },
-  testPathIgnorePatterns: ['node_modules', 'lib'],
 };
