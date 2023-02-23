@@ -1,8 +1,7 @@
-import given from '../src';
+import given from '../src/index.ts';
 
 describe('given', () => {
   given('count', () => 1);
-  // eslint-disable-next-line no-return-assign
   given('one', () => (given.count + 1));
 
   it('first', () => {
