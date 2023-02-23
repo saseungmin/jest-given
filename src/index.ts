@@ -1,6 +1,6 @@
 import Container from './container';
 
-export type Given = {
+type Given = {
   <T = never>(key: string, callback: () => T): T;
   [key: string]: never;
 };

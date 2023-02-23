@@ -8,7 +8,7 @@
     "test:jest-setup": "jest __tests__/given.global.test.js --setupFilesAfterEnv=./setup.js",
     "test:all": "yarn test & yarn test:jest-setup",
     "lint": "eslint '**/*.{js,ts}' --fix",
-    "prepare": "tsc && esbuild setup.ts --bundle --outdir=lib --platform=node --minify"
+    "prepare": "tsc && esbuild ./setup.js --bundle --outdir=lib --platform=node --minify"
   },
   "devDependencies": {
     "@swc/core": "^1.3.35",
