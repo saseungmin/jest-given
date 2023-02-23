@@ -1,4 +1,4 @@
-import given from '../src';
+import given from '../src/index';
 
 describe('given', () => {
   given('count', () => 1);

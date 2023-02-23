@@ -6,7 +6,7 @@ module.exports = {
   },
   ignorePatterns: [
     'node_modules/',
-    'lib/',
+    'build/',
   ],
   extends: [
     'airbnb-base',
@@ -31,7 +31,7 @@ module.exports = {
       },
       parser: '@typescript-eslint/parser',
       parserOptions: {
-        project: ['./tsconfig.json'],
+        project: ['./tsconfig.eslint.json'],
       },
     },
   ],

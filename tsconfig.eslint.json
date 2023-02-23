@@ -1,14 +1,10 @@
 {
   "compilerOptions": {
-    "module": "CommonJS",
     "preserveConstEnums": true,
     "strictNullChecks": true,
-    "outDir": "./build",
-    "declaration": true,
     "allowSyntheticDefaultImports": true,
-    "emitDeclarationOnly": true,
     "esModuleInterop": true
   },
-  "include": ["src/index.ts"],
+  "include": ["**/*.ts"],
   "exclude": ["node_modules", "build"]
 }
